@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Major League Baseball Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{url_for('index')}}" class="logo">MLB Salary Analysis</a>
+					<nav id="nav">
+						<a href="{{url_for('index')}}">Home</a>
+						<a href="{{url_for('scott')}}">Ball Clubs</a>
+						<a href="{{url_for('sam')}}">Position Groups</a>
+						<a href="{{url_for('calvin')}}">Batting</a>
+						<a href=".{{url_for('tiffany')}}">Pitching</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h1>MLB Salary Analysis</h1>
+				<p>A review of how money has impacted the last twenty years of baseball.</p>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper">
+				<div class="inner">
+					<div class="flex flex-3">
+						<article>
+							<header>
+								<h3>Team Salaries</h3>
+							</header>
+							<p>We begin with a look at team payroll and how the money they spent potentially correlates to wins.</p>
+							<footer>
+								<a href="{{url_for('scott')}}" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<header>
+								<h3>Position Groups</h3>
+							</header>
+							<p>Dive into an analysis of salaries and on-field positions. See where teams spent their money and WAR metrics.</p>
+							<footer>
+								<a href="{{url_for('sam')}}" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<header>
+								<h3>Player Salaries</h3>
+							</header>
+							<p>Drill down to player stats and how their salaries might have impacted batting and pitching statistics. </p>
+							<footer>
+								<a href="{{url_for('calvin')}}" class="button special">More</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style1 special">
+				<div class="inner">
+					<header>
+						<h2>Meet The Analytics Team</h2>
+					</header>
+					<div class="flex flex-4">
+						<div class="box person">
+							<div class="image round">
+								<img src="{{ url_for('static', filename='images/pic10.jpg') }}" alt="Person 1" />
+							</div>
+							<h3>Sam</h3>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="{{ url_for('static', filename='images/pic11.jpg') }}" alt="Person 2" />
+							</div>
+							<h3>Tiffany</h3>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="{{ url_for('static', filename='images/pic12.jpg') }}" alt="Person 3" />
+							</div>
+							<h3>Calvin</h3>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="{{ url_for('static', filename='images/pic13.jpg') }}" alt="Person 4" />
+							</div>
+							<h3>Scotty</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper special">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Analysis Research Tools</h2>
+					</header>
+					<div class="flex flex-2">
+						<article>
+							<div class="image fit">
+								<img src="{{ url_for('static', filename='images/pic01.png') }}" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Tableau</h3>
+							</header>
+							<p>Interactive presentation visualizations, Tableau offers us an effecient means to correlate and analyze our data to present our findings in a simple and easy to read format.</p>
+							<footer>
+								<a href="https://www.tableau.com/trial/tableau-software?utm_campaign_id=2017049&utm_campaign=Prospecting-CORE-ALL-ALL-ALL-ALL&utm_medium=Paid+Search&utm_source=Google+Search&utm_language=EN&utm_country=USCA&kw=tableau&adgroup=CTX-Brand-Priority-Core-E&adused=RESP&matchtype=e&placement=&gclid=EAIaIQobChMIkqr_j56F6wIVk8DACh3XCwnYEAAYASAAEgLR3fD_BwE&gclsrc=aw.ds" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image fit">
+								<img src="{{ url_for('static', filename='images/pic02.png') }}" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Machine Learning</h3>
+							</header>
+							<p>We set out to qualify relationships between performance and money. By using the regression models through Jupyter Notebook we analyzed these metrics in hopes to answer our questions. </p>
+							<footer>
+								<a href="https://scholar.google.com/scholar?q=pandas+machine+learning&hl=en&as_sdt=0&as_vis=1&oi=scholart" class="button special">More</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+			
+		<!-- Three -->
+			<section id="three" class="wrapper special">
+				<div class="inner">
+					<header class="align-center">
+						<h2>Behind The Scenes</h2>
+					</header>
+					<div class="flex flex-2">
+						<article>
+							<div class="image fit">
+								<img src="{{ url_for('static', filename='images/pic03.png') }}" alt="Pic 03" />
+							</div>
+							<header>
+								<h3>Pandas and Python</h3>
+							</header>
+							<p>Webscraping and data cleaning was a crucial first step in our analysis. We utilized Pandas and the Python coding language to extract data and load the data for use.</p>
+							<footer>
+								<a href="https://pandas.pydata.org" class="button special">More</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image fit">
+								<img src="{{ url_for('static', filename='images/pic04.png') }}" alt="Pic 04" />
+							</div>
+							<header>
+								<h3>Heroku</h3>
+							</header>
+							<p>Utilizing Heroku's web hosting services we were able to share our analysis to a greater number of stakeholders than we could on our own. </p>
+							<footer>
+								<a href="https://www.heroku.com" class="button special">More</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							&copy; MLB Salary Analysis. UoA/Trilogy Data Analytics BootCamp Final Project: Calvin, Sam, Scott and Tiffany </a>.
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>
