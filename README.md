@@ -1,4 +1,4 @@
-#MLB Salary and Wins Analysis
+MLB Salary and Wins Analysis
 
 An Analysis of Baseball Salaries to a Team's Regular Season Winning Percentage.
 
