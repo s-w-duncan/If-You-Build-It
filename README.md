@@ -1,5 +1,4 @@
-# If-You-Build-It
-Final Data Analytics Capstone
+#MLB Salary and Wins Analysis
 
 An Analysis of Baseball Salaries to a Team's Regular Season Winning Percentage.
 
